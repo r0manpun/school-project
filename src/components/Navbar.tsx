@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <div className={playfair.className}>
-      <nav className=" w-full h-16 lg:h-20 bg-[url(https://file.rendit.io/n/Qgb95NPNO8bIiZPFnZv6.svg)] bg-cover bg-50%_50% bg-blend-normal absolute top-20 left-0 flex  flex-row flex-auto flex-shrink-0 flex-grow justify-start gap-6 items-center px-12 drop-shadow-lg mt-5 ">
+      <nav className="relative w-full h-16 lg:h-20 bg-[url(https://file.rendit.io/n/Qgb95NPNO8bIiZPFnZv6.svg)] bg-cover bg-50%_50% bg-blend-normal -top-2 flex  flex-row flex-auto flex-shrink-0 flex-grow justify-start gap-6 items-center px-12 drop-shadow-lg ">
         {isSmallScreen && (<div className="flex items-center justify-between w-full">
           <div className="ml-auto">
           <button className="flex" onClick={handleToggle}>
@@ -40,12 +40,12 @@ export default function Navbar() {
           </div>)}
         </div> )}
         {!isSmallScreen &&(<>
-      <div className="md:text-lg text-sm md:font-semibold lg:font-bold text-black md:mr-8 items-center relative w-1/6 lg:h-1/6 hover:text-[#1091C8] ">
+      <div className="xl:text-3xl md:text-sm md:font-semibold lg:font-bold text-black md:mr-8 items-center relative w-1/6 lg:h-1/6 hover:text-[#1091C8] ">
         <Link href="/">HOME</Link>
       </div>
       <div className="border-solid border-[#bcb9b9] md:mr-6 relative w-px md:shrink-0 h-6 md:h-9 border-r border-l-0 border-y-0 md:mt-2" ></div>
       <div className="md:text-lg text-sm font-semibold text-black relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        NEWS/EVENTS
+        <Link href="/news&events">NEWS/EVENTS</Link>
       </div>
       <div className="border-solid border-[#bcb9b9] mr-10 relative w-px shrink-0 h-6 md:h-9 border-r borderl-0 bordery-0 mt-2" />
       <div className="md:text-lg text-sm font-semibold text-black mr-4 relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">

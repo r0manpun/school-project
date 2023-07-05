@@ -10,7 +10,7 @@ type Props = {};
 export default function page({}: Props) {
   return (
     <div className=" w-full h-full">
-      <div className="mt-20 border-2 border-red-500 w-[93%] mx-auto h-[40%]">
+      <div className="mt-14 border-2 border-red-500 w-[93%] mx-auto h-[40%]">
         <img
           src="/assets/academics/h.jpg"
           className="object-cover min-h-full w-full"

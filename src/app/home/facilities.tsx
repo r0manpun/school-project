@@ -13,7 +13,7 @@ import {
 } from "react-icons/md";
 
 import { Noto_Serif_SC, Playfair_Display, Open_Sans } from "next/font/google";
-import Slider from "../components/Slider";
+import Slider from "../../components/Slider";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -229,46 +229,46 @@ export default function Facilities() {
         Beyond the Classroom: Explore, Excel, and Embrace Activities
       </h1>
       <hr className="w-[220px] lg:w-[55%] border-[#ea9443] border-[1.5px] mx-auto mt-8" />
-      <div className="relative h-[900px] lg:mt-10">
-        <div className="relative grid grid-cols-2 gap-y-4 mx-auto lg:w-[90%] lg:gap-x-14">
-          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] self-center">
+      <div className="relative h-[900px] lg:mt-10 2xl:w-[84%] 2xl:mx-auto">
+        <div className="relative grid grid-cols-2 gap-y-4 mx-auto lg:w-[90%] 2xl:[75%] lg:gap-x-14">
+          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] 2xl:w-[600px] 2xl:h-[300px] self-center">
             <Image
               src="/assets/btc1.jpg"
               className="rounded-3xl object-cover w-full h-full"
-              width={450}
-              height={300}
+              width={850}
+              height={500}
               alt="btc1"
             />
           </div>
 
-          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] self-center">
+          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
             <img
               src="/assets/btc2.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] self-center">
+          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] 2xl:w-[600px] 2xl:h-[300px] self-center">
             <img
               src="/assets/btc3.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] self-center">
+          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
             <img
               src="/assets/btc4.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] self-center">
+          <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
             <img
               src="/assets/btc5.jpeg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className=" mx-auto lg:max-w-[500px] lg:h-[290px] self-center">
+          <div className=" mx-auto lg:max-w-[500px] lg:h-[290px]  2xl:w-[430px]  self-center">
             <img
               src="/assets/btc6.jpg"
-              className="rounded-3xl object-cover h-full "
+              className="rounded-3xl object-cover w-full h-full "
             />
           </div>
         </div>
@@ -276,17 +276,17 @@ export default function Facilities() {
         <div className=" absolute top-1 left-12 border-2 border-[#FD7900] h-full" />
         <div className=" absolute top-1 right-12 border-2 border-[#FD7900] h-full" />
         {/* Horizontal Lines Left*/}
-        <div className="absolute top-40 left-12 w-40 border-[1px] border-[#FD7900] "></div>
-        <div className="absolute top-1/2 left-12 w-36 border-[1px] border-[#FD7900] "></div>
-        <div className="absolute bottom-36 left-12 w-36 border-[1px] border-[#FD7900] "></div>
+        <div className="absolute top-40 left-12 w-40 2xl:w-[10.5%] border-[1px] border-[#FD7900] "></div>
+        <div className="absolute top-1/2 left-12 w-36 2xl:w-[10.5%] border-[1px] border-[#FD7900] "></div>
+        <div className="absolute bottom-36 left-12 w-36 2xl:w-[10.5%] border-[1px] border-[#FD7900] "></div>
         {/* Horizontal Lines Right*/}
         <div className="absolute top-40 right-12 w-40 border-[1px] border-[#FD7900] "></div>
-        <div className="absolute top-1/2 right-12 w-36 border-[1px] border-[#FD7900] "></div>
+        <div className="absolute top-1/2 right-12 w-36 2xl:w-[10.5%] border-[1px] border-[#FD7900] "></div>
         <div className="absolute bottom-36 right-12 w-40 border-[1px] border-[#FD7900] "></div>
       </div>
 
-
-      <div className="flex relative text-white mt-10 w-full h-auto ">
+    {/* Core Values */}
+      <div className="flex relative text-white mt-10 w-full 2xl:w-[85%] h-auto  2xl:mx-auto">
         <div className="lg:ml-40 lg:max-w-3xl">
           <img
             src="/assets/values.jpg"
