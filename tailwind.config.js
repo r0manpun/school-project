@@ -17,8 +17,16 @@ module.exports = {
           
       },
       fontSize:{
-          lg:['19px','25px']
+          lg:['19px']
+      },
+      filter:{
+        grayscale : 'grayscale(1)'
       }
+    },
+  },
+  variants: {
+    extend: {
+      filter: ['group-hover'],
     },
   },
   plugins: [],

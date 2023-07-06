@@ -4,7 +4,7 @@ import React from "react";
 type Props = {};
 
 const data ={
-    img :[ "/assets/events/a.jpg", "/assets/events/b.jpg","/assets/events/c.jpg","/assets/events/d.jpg","/assets/events/a.jpg", "/assets/events/b.jpg","/assets/events/c.jpg", ]
+    img :[ "/assets/events/a.jpg", "/assets/events/b.jpg","/assets/events/c.jpg","/assets/events/d.jpg" ]
 }
 
 export default function page({}: Props) {

@@ -21,7 +21,7 @@ export default function Home() {
           width={1440}
           height={656}
           src="/assets/DJI_0905.jpg"
-          className="w-full mt-10 lg:mt-16 md:mt-12 object-fit-cover"
+          className="w-full object-cover"
           alt="slider"
         />
         {/* Welcome  */}

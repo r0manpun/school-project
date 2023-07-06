@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@base
+@utilities {
+  .group:hover .group-hover\:filter-grayscale {
+    filter: grayscale(1);
+  }
+}
+@base 
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-
 }
 
 @media (prefers-color-scheme: dark) {

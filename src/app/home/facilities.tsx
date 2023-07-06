@@ -165,8 +165,8 @@ export default function Facilities() {
         style={{ position: "relative", height: "240px" }}
       >
         <Image
-          width={400}
-          height={250}
+          width={1200}
+          height={800}
           alt="gallery"
           src="/assets/about.jpg"
           className=" bg-black w-full object-cover mt-12 lg:h-full "
