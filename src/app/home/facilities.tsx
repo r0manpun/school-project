@@ -173,7 +173,7 @@ export default function Facilities() {
         />
         <ul className="grid absolute grid-cols-4 w-full top-1/4">
           <li className="flex items-center text-white border-r-[1px]">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/icons/time.png"
               className="lg:w-28 lg:h-24 lg:ml-6"
               alt="students"
@@ -184,7 +184,7 @@ export default function Facilities() {
             </span>
           </li>
           <li className="flex items-center text-white border-r-[1px]">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/icons/students.png"
               className="lg:w-32 lg:h-32 lg:ml-6"
               alt="students"
@@ -196,7 +196,7 @@ export default function Facilities() {
             </span>
           </li>
           <li className="flex items-center text-white border-r-[1px]">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/icons/group.png"
               className="lg:w-32 lg:h-32 lg:ml-6"
               alt="employees"
@@ -208,7 +208,7 @@ export default function Facilities() {
             </span>
           </li>
           <li className="flex items-center text-white w-40">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/icons/award.png"
               className="lg:w-32 lg:h-32 lg:ml-6"
               alt="award"
@@ -237,36 +237,36 @@ export default function Facilities() {
               className="rounded-3xl object-cover w-full h-full"
               width={850}
               height={500}
-              alt="btc1"
+              alt="beyond-classroom"
             />
           </div>
 
           <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/btc2.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
           <div className=" mx-auto lg:max-w-[420px] lg:h-[290px] 2xl:w-[600px] 2xl:h-[300px] self-center">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/btc3.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
           <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/btc4.jpg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
           <div className=" mx-auto lg:max-w-[420px] lg:h-[290px]  2xl:w-[600px] 2xl:h-[300px] self-center">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/btc5.jpeg"
               className="rounded-3xl object-cover w-full h-full"
             />
           </div>
           <div className=" mx-auto lg:max-w-[500px] lg:h-[290px]  2xl:w-[430px]  self-center">
-            <img
+            <Image width={1000} height={800} alt="beyond-classroom"
               src="/assets/btc6.jpg"
               className="rounded-3xl object-cover w-full h-full "
             />
