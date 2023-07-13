@@ -1,5 +1,6 @@
 import React from "react";
 import { Open_Sans } from "next/font/google";
+import Image from "next/image";
 
 const sans = Open_Sans({
   weight: ["600"],
@@ -11,9 +12,10 @@ export default function page({}: Props) {
   return (
     <div className=" w-full h-full">
       <div className="mt-14 border-2 border-red-500 w-[93%] mx-auto h-[40%]">
-        <img
+        <Image width={1200} height={800} 
           src="/assets/academics/h.jpg"
           className="object-cover min-h-full w-full"
+          alt="academics1"
         />
       </div>
       <h1 className="text-center mt-8 text-3xl font-extrabold">
@@ -66,7 +68,7 @@ export default function page({}: Props) {
         <div className="border-2 border-cyan-400 w-1/2 h-[500px]"></div>
       </div>
       <div className="border-2 border-red-400 w-[60%] h-[530px] mx-auto">
-        <img src="/assets/academics/p.png" className="object-cover w-full h-full"/>
+        <Image width={1400} height={900} src="/assets/academics/p.png" className="object-cover w-full h-full" alt="academics"/>
       </div> 
       <div className={sans.className}>
         <h1 className="text-center my-10 xl:text-3xl font-extrabold">

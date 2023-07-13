@@ -1,28 +1,8 @@
-import { url } from "inspector";
+
 import React from "react";
 
 type Props = {};
 
-const image = [
-  {
-    url: "/assets/gallery/environment/1.jpg",
-  },
-  {
-    url: "/assets/gallery/environment/2.jpg",
-  },
-  {
-    url: "/assets/gallery/environment/3.jpg",
-  },
-  {
-    url: "/assets/gallery/environment/4.jpg",
-  },
-  {
-    url: "/assets/gallery/environment/5.jpg",
-  },
-  {
-    url: "/assets/gallery/environment/6.jpg",
-  },
-];
 
 export default function page({}: Props) {
   return (
