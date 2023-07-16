@@ -10,11 +10,11 @@ const data ={
 export default function page({}: Props) {
   return (
     <>
-      <div className="w-[1440px] mx-auto">
-        <div className="flex justify-center items-center gap-3 text-3xl mt-8 ">
+      <div className="xl:w-[1440px] mx-auto">
+        <div className="flex justify-center items-center gap-3 text-lg xl:text-3xl mt-2 xl:mt-8 font-semibold ">
           "Sharing Smiles"
         </div>
-        <p className="xl:text-lg 2xl:text-xl  mt-5 font-sans">
+        <p className="w-[96%] mx-auto text-[10px] xl:text-lg 2xl:text-xl mt-2 xl:mt-5 font-sans">
           Our school team recently had the privilege of visiting the nearby old
           age home. Through our collective efforts, we aimed to bring smiles,
           comfort, and nourishment to these esteemed members of our community.
@@ -29,13 +29,13 @@ export default function page({}: Props) {
           with their wisdom and experiences.
         </p>
       </div>
-      <div className="flex flex-wrap gap-x-6 gap-y-10 place-content-center w-[80%] mx-auto mt-8">
-        {data.img.map((url) =>(<Image width={800} height={500} src={url} alt="events" key={url} className="w-[449px] h-[349px]"/>) )}
+      <div className="flex flex-wrap gap-4 xl:gap-x-6 xl:gap-y-10 place-content-center xl:w-[80%] mx-auto mt-8">
+        {data.img.map((url) =>(<Image width={1500} height={1000} src={url} alt="events" key={url} className="object-cover w-[165px] h-[130px] xl:w-[449px] xl:h-[349px]"/>) )}
         </div>
-        <div className="flex justify-center items-center gap-3 text-2xl mt-10">
-        <hr className=" border-black w-20" />
+        <div className="flex justify-center items-center gap-2 xl:gap-3 text-[10px] xl:text-2xl mt-5 xl:mt-10">
+        <hr className=" border-black w-10 xl:w-20" />
         27th Flagun, 2079
-        <hr className="border-black w-20" />
+        <hr className="border-black w-10 xl:w-20" />
       </div>
     </>
   );

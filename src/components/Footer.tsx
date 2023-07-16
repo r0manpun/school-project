@@ -16,27 +16,27 @@ export default function Footer() {
   const isSmallScreen = useMediaQuery('(max-width:420px)')
   return (
     <footer className="mt-6">
-      <div className="relative w-full h-[280px] xl:mt-14 lg:h-[380px]">
-        <Image width={1400} height={800} src="/assets/home/footer.png" className="absolute w-full h-full bg-white opacity-30" alt="footer"/>
-          <div className="absolute top-0 lg:top-[13%] lg:left-[12%] xl:w-[30%] mx-auto">
-            <div className="flex">
+      <div className="relative w-full h-[190px] xl:mt-14 lg:h-[380px]">
+        <Image width={1400} height={800} src="/assets/home/footer.png" className="absolute w-full h-full object-cover bg-white opacity-30" alt="footer"/>
+          <div className="absolute top-0 lg:top-[13%] lg:left-[12%] w-full  xl:w-[30%] mx-auto">
+            <div className="ml-6 ">
               <Image
-                className=" w-[8.5rem] xl:w-[234px] -ml-8 xl:-ml-9 xl:mt-1 mt-2"
+                className=" w-[8.5rem] xl:w-[234px] xl:-ml-14 xl:mt-1 mt-2"
                 src="/assets/logo.png"
                 width={1000}
                 height={800}
                 style={{ filter: "invert" }}
                 alt="logo"
               />
-              <label className="absolute top-6 left-16 xl:top-8 xl:left-32 text-sm lg:text-xl font-bold">
+              <label className="absolute top-6 left-[115px] xl:top-8 xl:left-32 text-sm lg:text-xl font-bold">
                 RAINBOW ACADEMIC HOMES
               </label>
-              <label className="absolute top-11 left-16 lg:top-14 lg:left-32 text-[9px] lg:font-semibold">
+              <label className="absolute top-11 left-[132px] lg:top-14 lg:left-32 text-[9px] lg:font-semibold">
                 POKHARA, NEPAL
               </label>
             </div>
-            <hr className="w-[220px] lg:w-[70%] border-[#ea9443] border-[1.5px] ml-14 xl:ml-20" />
-            <div className="flex flex-wrap xl:grid gap-2 xl:justify-center text-[10px] lg:text-base  mt-5 xl:-ml-12">
+            <hr className="w-[220px] lg:w-[70%] border-[#ea9443] border-[1.5px] ml-20" />
+            <div className="flex flex-row flex-wrap xl:grid gap-2 xl:justify-center text-[10px] lg:text-base text-center mt-3 xl:mt-5 xl:-ml-12">
               <div className="flex items-center gap-1 font-semibold ">
                 <SlLocationPin className="w-3 xl:w-5 xl:h-5" />
                 KOLPATAN-15,POKHARA,NEPAL<p className="xl:hidden">|</p>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
           <hr className="absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%]" />
           </> )}
-          <div className="flex absolute justify-around xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
+          <div className="flex absolute justify-around w-[100px]  xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
           <RiFacebookCircleLine className="w-7 h-7" />
           <FiYoutube className="w-7 h-7" />
         </div>

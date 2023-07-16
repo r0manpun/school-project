@@ -25,36 +25,35 @@ const data = [
 export default function News({}: Props) {
   return (
     <>
-      <div className="flex justify-center items-center gap-3 text-3xl ">
-        <hr className=" border-black w-20" />
+      <div className="flex justify-center items-center gap-3 text-base xl:text-3xl ">
+        <hr className=" border-black w-8 xl:w-20" />
         News And Events
-        <hr className="border-black w-20" />
+        <hr className="border-black w-8 xl:w-20" />
       </div>
-      <div className="grid grid-cols-2 2xl:grid-cols-3 gap-x-20 gap-y-16 w-[87%] mx-auto mt-6">
+      <div className="grid grid-cols-2 2xl:grid-cols-3 gap-x-4 xl:gap-x-20 gap-y-5 xl:gap-y-16 w-[87%] mx-auto mt-6">
         {data.map(({ img, title, desc }, index) => (
           <div
-            className="border relative h-[400px] xl:h-[555px] 2xl:h-[620px] bg-white drop-shadow-lg"
+            className="border relative h-[200px] xl:h-[555px] 2xl:h-[560px] bg-white drop-shadow-lg"
             key={index}
           >
-            <div className=" w-full h-[65%] 2xl:h-[70%]">
-              {" "}
+            <div className=" w-full h-[60%] 2xl:h-[66%]">
               <Image
                 src={img}
-                width={900}
-                height={600}
+                width={1200}
+                height={900}
                 alt="events"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-5">
-              <h1 className="text-center lg:text-base xl:text-[22px]">
+            <div className="p-1 xl:p-5">
+              <h1 className="text-center lg:text-base text-[12px] xl:text-[22px] line-clamp-1">
                 "{title}"
               </h1>
-              <p className="md:text-base xl:text-lg mt-2 line-clamp-2">{desc}</p>
-              <div className="">
+              <p className="text-[10px] md:text-base xl:text-lg xl:mt-3 line-clamp-2">{desc}</p>
+              <div className="flex w-full justify-center xl:mt-2 ">
                 <Link
                   href="/news&events/id"
-                  className="flex absolute hover:border hover:rounded-[30px] place-items-center justify-center text-base w-[121px] h-14 mt-2 xl:ml-56 2xl:ml-40 hover:bg-[#19E3E3] hover:text-white"
+                  className="flex justify-center items-center absolute hover:border hover:rounded-[30px] text-[9px] xl:text-base w-[60px] xl:w-[121px]  h-6 xl:h-14 2xl:mx-auto hover:bg-[#19E3E3] hover:text-white"
                 >
                   Read More
                 </Link>
