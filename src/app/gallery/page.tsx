@@ -1,100 +1,85 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
+const galleryData = [
+  {
+    title: "All SLC Batch",
+    img:"",
+    url:"/gallery/all-slc-batch"
+  },
+  {
+    title: "Children's Day",
+    img:"",
+    url:"/gallery/childrens-day"
+  },
+  {
+    title: "Dashain Celebration",
+    img:"assets/gallery/festival.jpg",
+    url:"/gallery/dashain-celebration"
+  },
+  {
+    title: "Distributing Dustbins",
+    img:"assets/btc1.jpg",
+    url:"/gallery/distributing-dustbins"
+  },
+  {
+    title: "Environment Day",
+    img:"assets/gallery/enviro.jpg",
+    url:"/gallery/environment-day"
+  },
+  {
+    title: "Parent's Day",
+    img:"",
+    url:"/gallery/parents-day"
+  },
+  {
+    title: "Rangoli Competition",
+    img:"assets/gallery/rangoli.jpg",
+    url:"/gallery/rangoli-competition"
+  },
+  {
+    title: "Swarswoti Puja",
+    img:"",
+    url:"/gallery/swarswoti-puja"
+  },
+  {
+    title: "Sports Meet",
+    img:"assets/gallery/sports.jpg",
+    url:"/gallery/sports-meet"
+  },
+]
+
 export default function page({}: Props) {
   return (
     <>
-      <div className="flex justify-center items-center gap-3 md:text-xl lg:text-2xl xl:text-5xl ">
-        <hr className=" border-black w-20" />
-        Everlasting Memories: Explore Our School Gallery
-        <hr className="border-black w-20" />
+      <div className="flex justify-center items-center gap-2 xl:gap-3 md:text-xl lg:text-2xl xl:text-5xl ">
+        <hr className=" border-black w-8 xl:w-20" />
+        Everlasting Memories:<br className="xl:hidden" /> Explore Our School Gallery
+        <hr className="border-black w-8 xl:w-20" />
       </div>
-      <h1 className="lg:text-2xl xl:text-5xl text-center mt-4 font-medium">
-        Where
+      <h1 className="lg:text-base xl:text-2xl 2xl:text-5xl text-center mt-2 xl:mt-4 font-medium">
+          Where
       </h1>
-      <h1 className="lg:text-2xl xl:text-5xl text-center mt-2 font-medium">
+      <h1 className="lg:text-base xl:text-2xl 2xl:text-5xl text-center xl:mt-2 font-medium">
         "Every picture tells a story"
       </h1>
-      <div className="w-[80%] mx-auto mt-20 grid grid-cols-3 gap-y-20">
-        <div className="flex relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border ">
+
+      {/* GALLERY */}
+
+      <div className="w-[90%] xl:w-[80%] mx-auto mt-3 xl:mt-20 flex flex-wrap xl:grid xl:grid-cols-3 gap-4 xl:gap-y-10 2xl:gap-y-16 place-content-center">
+        {galleryData.map((item,index)=> (
+        <Link href={item.url}><div key={index} className="flex place-content-center items-center relative w-[160px] h-[120px] lg:w-[250px] lg:h-[200px] xl:w-[400px] xl:h-[350px] transition duration-300 hover:scale-105 bg-gray-500">
           <img
-            src="assets/gallery/sports.jpg"
-            className=" w-full h-full object-cover"
+            src={item.img}
+            className=" w-full h-full object-cover "
           />
-          <h1 className=" absolute self-center left-1/4  xl:left-24  text-cyan-500 text-2xl">
-            Sports Meet
+          <h1 className="absolute text-white text-base xl:text-2xl">
+            {item.title}
           </h1>
         </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/sports.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Sports Meet
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/festival.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Dashain Celebration
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img src="assets/btc1.jpg" className=" w-full h-full object-cover" />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Distributing Dustbin
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/enviro.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Sports Meet
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/sports.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Sports Meet
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/rangoli.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Rangoli Competition
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/puja.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Saraswoti Puja
-          </h1>
-        </div>
-        <div className="relative w-[250px] h-[200px] xl:w-[400px] xl:h-[350px] border">
-          <img
-            src="assets/gallery/sports.jpg"
-            className=" w-full h-full object-cover"
-          />
-          <h1 className=" absolute top-1/2 lg:left-8 xl:left-24  text-white text-2xl">
-            Sports Meet
-          </h1>
-        </div>
+        </Link>))}
       </div>
     </>
   );

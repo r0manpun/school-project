@@ -31,17 +31,17 @@ const sans = Open_Sans({
 });
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60",
+    url:"/assets/btc2.jpg"
   },
   {
-    url: "https://images.unsplash.com/photo-1685788769454-e6fe5f7b4d55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1034&q=80",
+    url:"/assets/btc6.jpg"
   },
   {
-    url: "https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60",
+    url:"/assets/gallery/environment/1.jpg"
   },
   {
-    url: "https://images.unsplash.com/photo-1685788769454-e6fe5f7b4d55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1034&q=80",
-  },
+    url:"/assets/gallery/environment/5.jpg"
+  }
 ];
 
 export default function Facilities() {
@@ -55,15 +55,6 @@ export default function Facilities() {
         <div className="lg:flex w-full">
           <div className=" self-center mx-auto w-[90%] h-[220px] lg:h-[500px] mt-[5%] xl:mt-14 lg:mt-10 lg:w-[60%] lg:ml-16 2xl:w-[1200px] 2xl:h-[620px] ">
             <Slider slides={slides} />
-            {/*
-            "w-72 self-center md:w-[744px] md:h-[480px] md:ml-20 mt-10"
-             <Image
-              src="/assets/welcome.jpg"
-              width={744}
-              height={480}
-              alt="slider"
-              className="object-cover"
-            /> */}
           </div>
           <div className="p-4 md:p-8 mt-2 md:mt-24 md:h-[424px] lg:w-[50%] lg:mt-12 lg:ml-12 2xl:w-[1070px] 2xl:h-full 2xl:ml-14">
             <p className="md:h-[113px] lg:w-full 2xl:w-full">
@@ -387,7 +378,7 @@ export default function Facilities() {
           </div>
         </div>
       </div>
-      <div className="w-full mt-14 text-3xl text-center text-[#FD7900]">
+      <div className="w-full mt-14 text-sm xl:text-3xl text-center text-[#FD7900]">
         <button className="border-2 border-black p-3">News & Events</button>
       </div>
     </>

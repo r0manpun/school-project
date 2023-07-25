@@ -14,10 +14,38 @@ const playfair = Playfair_Display({
 });
 
 // [url(https://file.rendit.io/n/Qgb95NPNO8bIiZPFnZv6.svg)]
+const navItem = [{
+  title: "home",
+  slug: ""
+},
+{
+  title: "news/events",
+  slug: "news&events"
+},
+{
+  title: "academics",
+  slug: "academics"
+},
+{
+  title: "gallery",
+  slug: "gallery"
+},{
+  title: "about us",
+  slug: "about-us"
+}
+,{
+  title: "conact",
+  slug: "contact"
+},
+{
+  title: "admission",
+  slug: "admission"
+}
 
+]
 export default function Navbar() {
   //const isSmallScreen = useMediaQuery({maxWidth:'800'});
-  const isSmallScreen = useMediaQuery('(max-width: 800px)')
+  const isSmallScreen = useMediaQuery("(max-width: 800px)");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggle = () => {
@@ -26,55 +54,39 @@ export default function Navbar() {
 
   return (
     <div className={playfair.className}>
-      <nav className="relative w-full h-16 lg:h-20 bg-white bg-cover bg-50%_50% bg-blend-normal -top-2 flex  flex-row flex-auto flex-shrink-0 flex-grow justify-start gap-6 items-center px-12 drop-shadow-lg ">
-        {isSmallScreen && (<div className="flex items-center justify-between w-full">
-          <div className="ml-auto">
-          <button className="flex" onClick={handleToggle}>
-              <MdOutlineMenu className="w-7 h-8" />
-            </button>
-          </div>
-          {isMenuOpen&& (<div className={`absolute flex flex-col items-center top-14 right-0 w-2/5 h-screen bg-slate-300 transition-transform duration-900  transform${isMenuOpen ? 'translate-x-0':'translate-x-full'}`}>
-            <Link href="/home"><MdHome/> HOME </Link>
-            <Link href="/news&events">NEWS/EVENTS</Link>
-            <Link href="/academics">ACADEMICS</Link>
-            <Link href="/gallery">GALLERY</Link>
-            <Link href="/about-us">ABOUT US</Link >
-            <Link href="/about-us">CONTACT</Link >
-            <Link href="/about-us">ADMISSION</Link >
-          </div>)}
-        </div> )}
-        {!isSmallScreen &&(<>
-      <div className="xl:text-xl md:text-sm md:font-semibold lg:font-bold text-black md:mr-8 items-center relative w-1/6 lg:h-1/6 hover:text-[#1091C8] ">
-        <Link href="/">HOME</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] md:mr-6 relative w-px md:shrink-0 h-6 md:h-9 border-r border-l-0 border-y-0 md:mt-2" ></div>
-      <div className="md:text-lg text-sm font-semibold text-black relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        <Link href="/news&events">NEWS/EVENTS</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] mr-10 relative w-px shrink-0 h-6 md:h-9 border-r borderl-0 bordery-0 mt-2" />
-      <div className="md:text-lg text-sm font-semibold text-black mr-4 relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        <Link href='/academics'>ACADEMICS</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] mr-8 relative w-px shrink-0 h-6 md:h-9  border-r borderl-0 bordery-0 mt-2" />
-      <div className="md:text-lg text-sm font-semibold text-black mr-4 relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        <Link href="/gallery"> GALLERY</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] mr-6 relative w-px shrink-0 h-6 md:h-9  border-r borderl-0 bordery-0 mt-2" />
-      <div className="md:text-lg text-sm font-semibold text-black mr-2 relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        <Link href="/about-us">ABOUT US</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] mr-8 relative w-px shrink-0 h-6 md:h-9  border-r borderl-0 bordery-0 mt-2" />
-      <div className="md:text-lg text-sm font-semibold text-black mr-3 relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-      <Link href='/contact'>CONTACT</Link>
-      </div>
-      <div className="border-solid border-[#bcb9b9] mr-8 relative w-px shrink-0 h-6 md:h-9  border-r borderl-0 bordery-0 mt-2" />
-      <div className="md:text-lg text-sm  font-semibold text-black relative w-1/6 lg:h-1/6 hover:text-[#1091C8]">
-        <Link href="/admission">ADMISSION</Link>
-      </div>
-      </>
-      )
-    }
-   </nav>
-   </div>
+      <nav className="relative w-full h-10 md:h-14 lg:h-16 bg-white bg-cover bg-blend-normal -top-2 flex  flex-auto flex-shrink-0 flex-grow justify-start gap-6 items-center px-12 drop-shadow-lg ">
+        {isSmallScreen? (
+          <>
+              <button className="ml-auto" onClick={handleToggle}>
+                <MdOutlineMenu className="w-7 h-8" />
+              </button>
+            
+            <div
+                className={`fixed flex flex-col right-0 w-full h-screen top-10 opacity-100 bg-blue-500 transition-transform duration-500  ${
+                  isMenuOpen
+                    ? "transform translate-x-0 "
+                    : "transform translate-x-full "
+                } ${isMenuOpen ? "" : "pointer-events-none"}` }
+              >
+                {navItem.map(({title,slug})=>(<Link href={`/${slug}`} className="uppercase flex justify-center items-center">
+                  <MdHome /> {title}
+                </Link>))}
+              </div>
+          </>
+        ) : (
+          <>{navItem.map((item,index)=>
+          (<div className={`w-full xl:text-lg 2xl:text-2xl ${
+            index === navItem.length - 1 ? "" : "border-r-2"
+          } hover:text-[#1091C8]`}>
+          <Link href={`/${item.slug}]`} className="uppercase flex justify-around pr-2 xl:pr-8 ">{item.title}</Link>
+        </div>
+        ))}
+       {/* < div className="text-sm lg:text-lg 2xl:text-2xl hover:text-[#1091C8] ">
+          <Link href="/admission`" className="uppercase 2xl:pr-8 ">admission</Link>
+        </div> */}
+          </>
+        )}
+      </nav>
+    </div>
   );
 }

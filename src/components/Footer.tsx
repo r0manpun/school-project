@@ -15,17 +15,16 @@ const sans = Open_Sans({
 export default function Footer() {
   const isSmallScreen = useMediaQuery('(max-width:420px)')
   return (
-    <footer className="mt-6">
+    <footer className="mt-6 xl:mt-24">
       <div className="relative w-full h-[190px] xl:mt-14 lg:h-[380px]">
         <Image width={1400} height={800} src="/assets/home/footer.png" className="absolute w-full h-full object-cover bg-white opacity-30" alt="footer"/>
           <div className="absolute top-0 lg:top-[13%] lg:left-[12%] w-full  xl:w-[30%] mx-auto">
-            <div className="ml-6 ">
+            <div className="ml-6 mb-2">
               <Image
-                className=" w-[8.5rem] xl:w-[234px] xl:-ml-14 xl:mt-1 mt-2"
-                src="/assets/logo.png"
+                className=" w-20 ml-5 mt-4 "
+                src="/logo2.png"
                 width={1000}
                 height={800}
-                style={{ filter: "invert" }}
                 alt="logo"
               />
               <label className="absolute top-6 left-[115px] xl:top-8 xl:left-32 text-sm lg:text-xl font-bold">

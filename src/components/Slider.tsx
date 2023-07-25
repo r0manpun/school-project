@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import {
   MdOutlineArrowBackIosNew,
@@ -25,15 +26,6 @@ export default function Slider({ slides }: Props) {
         currentIndex === 0 ? slides.length - 1 : currentIndex - 1
       );
     }
-    // if (direction === "left") {
-    //   setCurrentIndex((prevIndex) =>
-    //     prevIndex > 0 ? prevIndex - 1 : slides.length - 1
-    //   );
-    // } else {
-    //   setCurrentIndex((prevIndex) =>
-    //     prevIndex < slides.length - 1 ? prevIndex + 1 : 0
-    //   );
-    // }
   };
 
   return (
@@ -45,7 +37,9 @@ export default function Slider({ slides }: Props) {
         <MdOutlineArrowBackIosNew />
       </button>
       {slides.map((item, index) => (
-        <img
+        <Image
+        width={1200}
+        height={1000}
           src={item.url}
           key={index}
           alt={`slider${index}`}
@@ -63,29 +57,5 @@ export default function Slider({ slides }: Props) {
         <MdOutlineArrowForwardIos />
       </button>
     </div>
-    // <div className="h-full relative">
-    //   <button className="absolute text-4xl top-1/2 transform -translate-y-1/2 z-10" style={{left:'4px'}}  onClick={() => handleSlide("left")}>
-    //     <MdOutlineArrowBackIosNew />
-    //   </button>
-    //   <div className="flex h-full transition-all duration-1500 ease-linear" style={{transform: `translateX(-${currentIndex * 100}%)`}}>
-    //     {slides.map((item, index) => (
-    //       <div
-    //         className={`flex-shrink-0 w-full h-full  ${
-    //           index === currentIndex ? "opacity-100" : "opacity-0"
-    //         }`}
-    //         key={index}
-    //       >
-    //         <img className="w-full h-full border-2 rounded-3xl border-gray-400 object-cover" src={item.url} alt={`slider-${index}`} />
-    //       </div>
-    //     ))}
-    //     </div>
-    //   <button className="absolute text-4xl top-1/2 transform -translate-y-1/2 z-10" style={{right:'4px'}} onClick={() => handleSlide("right")}>
-    //     <MdOutlineArrowForwardIos />
-    //   </button>
-    // </div>
   );
 }
-
-// {`flex-shrink-0 w-full h-full object-cover ${
-//   index === currentIndex ? "opacity-100" : "opacity-0"
-// } transition-opacity duration-400`}
