@@ -78,7 +78,7 @@ export default function Navbar() {
           (<div className={`w-full xl:text-lg 2xl:text-2xl ${
             index === navItem.length - 1 ? "" : "border-r-2"
           } hover:text-[#1091C8]`}>
-          <Link href={`/${item.slug}]`} className="uppercase flex justify-around pr-2 xl:pr-8 ">{item.title}</Link>
+          <Link href={`/${item.slug}`} className="uppercase flex justify-around pr-2 xl:pr-8 ">{item.title}</Link>
         </div>
         ))}
        {/* < div className="text-sm lg:text-lg 2xl:text-2xl hover:text-[#1091C8] ">

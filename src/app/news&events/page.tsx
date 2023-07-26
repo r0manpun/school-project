@@ -30,13 +30,13 @@ export default function News({}: Props) {
         News And Events
         <hr className="border-black w-8 xl:w-20" />
       </div>
-      <div className="grid grid-cols-2 2xl:grid-cols-3 gap-x-4 xl:gap-x-20 gap-y-5 xl:gap-y-16 w-[87%] mx-auto mt-6">
+      <div className="grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-16 mx-auto mt-6">
         {data.map(({ img, title, desc }, index) => (
           <div
-            className="border relative h-[200px] xl:h-[555px] 2xl:h-[560px] bg-white drop-shadow-lg"
+            className="border relative h-64 md:h-96 w-11/12 2xl:w-2/3 xl:h-[555px] 2xl:h-[560px] bg-white drop-shadow-lg mx-auto"
             key={index}
           >
-            <div className=" w-full h-[60%] 2xl:h-[66%]">
+            <div className=" w-full h-2/3 ">
               <Image
                 src={img}
                 width={1200}

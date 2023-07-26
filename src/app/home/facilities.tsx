@@ -44,6 +44,27 @@ const slides = [
   }
 ];
 
+const newsItem =[{
+  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
+  date:"Jestha 12",
+  img:"/assets/home/home1.jpg",
+},
+{
+  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
+  date:"Jestha 12",
+  img:"/assets/home/home1.jpg",
+},
+{
+  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
+  date:"Jestha 12",
+  img:"/assets/home/home1.jpg",
+},
+{
+  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
+  date:"Jestha 12",
+  img:"/assets/home/home1.jpg",
+},]
+
 export default function Facilities() {
   return (
     <>
@@ -336,46 +357,14 @@ export default function Facilities() {
         </h1>
         <hr className="w-[220px] lg:w-[16%] border-[#ea9443] border-[1.5px] mx-auto mt-8" />
         <div className="grid lg:h-[550px] mt-10 lg:grid-cols-4 gap-6 w-[93%] 2xl:w-[90%] mx-auto">
-          <div className="">
-            <img src="/assets/home/home1.jpg" className="w-full h-[250px]" />
+          {newsItem.map(({title,img,date},index)=>(<div className={`${index === 1 || index===3 ? 'self-end': '' }`}>
+            <img src={img} className="w-full h-[250px]" />
             <p className="flex mt-8 justify-center">
-              Parents oreientation program from class <br /> Nursery to UKG by
-              Kabita Aryal madam
+              {title}
             </p>
             <hr className="lg:w-[60%] border-[#C6BDBD] border-[1.5px] mx-auto mt-8" />
-            <p className="flex mt-8 justify-center">14th-15th Jestha, 2080</p>
-          </div>
-          <div className=" self-end">
-            <img
-              src="/assets/home/home2.jpg"
-              className="object-cover w-full h-[260px]"
-            />
-            <p className="flex mt-8 justify-center">
-              Lower Secondary English Spelling Contest
-            </p>
-            <hr className="lg:w-[60%] border-[#C6BDBD] border-[1.5px] mx-auto mt-8" />
-            <p className="flex mt-8 justify-center">5th Jestha, 2080</p>
-          </div>
-          <div className=" ">
-            <img src="/assets/home/home3.jpg" className="" />
-            <p className="flex mt-8 justify-center">
-              Selection of all-School's Captains, Vice Captains, each house
-              Captains, Vice-Captains, house teachers
-            </p>
-            <hr className="lg:w-[60%] border-[#C6BDBD] border-[1.5px] mx-auto mt-8" />
-            <p className="flex mt-8 justify-center">1st Jestha, 2080</p>
-          </div>
-          <div className=" self-end ">
-            <img
-              src="/assets/home/home4.jpg"
-              className="object-cover w-full h-[250px]"
-            />
-            <p className="flex mt-8 place-items-center">
-              Entrance exam for admission of academic year 2080
-            </p>
-            <hr className="lg:w-[60%] border-[#C6BDBD] border-[1.5px] mx-auto mt-8" />
-            <p className="flex mt-8 justify-center">29th Chaitra, 2079</p>
-          </div>
+            <p className="flex mt-8 justify-center">{date}</p>
+          </div>))}
         </div>
       </div>
       <div className="w-full mt-14 text-sm xl:text-3xl text-center text-[#FD7900]">
