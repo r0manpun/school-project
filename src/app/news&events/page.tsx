@@ -47,7 +47,7 @@ export default function News({}: Props) {
             </div>
             <div className="p-1 xl:p-5">
               <h1 className="text-center lg:text-base text-[12px] xl:text-[22px] line-clamp-1">
-                "{title}"
+                &quot;{title}&quot;
               </h1>
               <p className="text-[10px] md:text-base xl:text-lg xl:mt-3 line-clamp-2">{desc}</p>
               <div className="flex w-full justify-center md:mt-2 ">

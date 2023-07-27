@@ -12,7 +12,7 @@ export default function page({}: Props) {
     <>
       <div className="xl:w-[1440px] mx-auto">
         <div className="flex justify-center items-center gap-3 text-lg xl:text-3xl mt-2 xl:mt-8 font-semibold ">
-          "Sharing Smiles"
+          &quot;Sharing Smiles&quot;
         </div>
         <p className="w-[90%] mx-auto text-sm md:text-base 2xl:text-xl mt-2 xl:mt-5 font-sans">
           Our school team recently had the privilege of visiting the nearby old

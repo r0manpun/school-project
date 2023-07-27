@@ -1,27 +1,27 @@
 import React from "react";
 import { SlLocationPin } from "react-icons/sl";
 import { FiPhone, FiMail } from "react-icons/fi";
-import {AiOutlineSend} from "react-icons/ai"
+import Image from "next/image";
 
 type Props = {};
 
 export default function page({}: Props) {
   return (
     <>
-    <div className="w-full h-full">
+    <div className="w-full h-full ">
       <div className="flex flex-col w-full h-ful">
-          <img className="absolute w-full h-full object-cover" src="/assets/background/b1.png"/>
-        <div className="relative text-sm xl:text-2xl ml-3 xl:ml-20 mt-8">
+          <Image  height={1400} width={1400} className="absolute w-full h-full object-cover" src="/assets/background/b1.png" alt="background"/>
+        <div className="relative text-sm md:text-xl xl:text-2xl font-semibold ml-3 xl:ml-20 mt-8 gap-y-3">
           <div className="flex items-center gap-2">
-            <SlLocationPin className="w-6 h-6 xl:w-10 xl:h-10" />
+            <SlLocationPin className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
             <label>Kolpatan-15, Pokhara,Kaski,Nepal</label>
           </div>
           <div className="flex items-center gap-2">
-            <FiPhone className="w-6 h-6 xl:w-10 xl:h-10" />
+            <FiPhone className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
             <label>+977-061-430577, 061-430191</label>
           </div>
           <div className="flex items-center gap-2">
-            <FiMail className=" w-6 h-6 xl:w-10 xl:h-10" />
+            <FiMail className=" w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
             <label>rainbowacademic52@gmail.com</label>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function page({}: Props) {
         <input type="text" placeholder="Phone number" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
         <input type="text" placeholder="Subject" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
         <input type="text" placeholder="Message" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
-        <button className="flex justify-center items-center border xl:border-2 border-black w-20 h-8 xl:w-32 xl:h-14 rounded-3xl text-[12px] lg:text-base font-semibold my-5 xl:mt-8 mx-auto">Submit<img src="/assets/icons/s.png" className="w-5 h-4 xl:w-[34px] xl:h-[34px]"/></button>
+        <button className="flex justify-center items-center border xl:border-2 border-black w-20 h-8 xl:w-32 xl:h-14 rounded-3xl text-[12px] lg:text-base font-semibold my-5 xl:mt-8 mx-auto">Submit<Image width={1000} height={800} src="/assets/icons/s.png" className="w-5 h-4 xl:w-[34px] xl:h-[34px]" alt="submit"/></button>
        </form>
       </div>
       </div>

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { data } from "autoprefixer";
 
 const img = [
   "/assets/gallery/parentsday/p1.jpg",
@@ -43,7 +42,7 @@ const img = [
   "/assets/gallery/environment/12.jpg",
 ];
 
-export default function page() {
+export default function Page() {
   const [page, setPage] = useState(1);
 
   const recordsPerPage = 9;
@@ -89,7 +88,7 @@ export default function page() {
   return (
     <>
       <div className="flex justify-center items-center text-4xl mt-8 ">
-        Parent's Day
+        Parent&apos;s Day
       </div>
       <hr className="w-[220px] lg:w-[13%] border-black mx-auto mt-2" />
       {content}

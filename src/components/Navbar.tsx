@@ -68,8 +68,9 @@ export default function Navbar() {
                   : "transform translate-x-full"
               } ${isMenuOpen ? "" : "hidden"}`}
             >
-              {navItem.map(({ title, slug }) => (
+              {navItem.map(({ title, slug },index) => (
                 <Link
+                key={index}
                   href={`/${slug}`}
                   className="uppercase flex justify-center items-center "
                 >
@@ -81,7 +82,7 @@ export default function Navbar() {
         ) : (
           <>
             {navItem.map((item, index) => (
-              <div
+              <div key={index}
                 className={`w-full xl:text-lg 2xl:text-2xl ${
                   index === navItem.length - 1 ? "" : "border-r-2"
                 } hover:text-[#1091C8]`}

@@ -16,8 +16,8 @@ export default function page({}: Props) {
             Our mission is to empower students through a transformative
             educational experience that ignites their intellectual curiosity,
             nurtures their personal growth, and prepares them to become
-            influential global citizens. Guided by our motto, "Enlighten
-            Yourself to Enlighten Your Future," we are dedicated to fostering a
+            influential global citizens. Guided by our motto, &quot;Enlighten
+            Yourself to Enlighten Your Future,&quot; we are dedicated to fostering a
             love for learning, cultivating critical thinking skills, and
             instilling values of integrity, empathy, and resilience.
           </p>

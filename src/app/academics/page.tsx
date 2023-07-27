@@ -19,7 +19,7 @@ export default function page({}: Props) {
         />
       </div>
       <h1 className="text-center mt-8 text-3xl font-extrabold">
-        "Our Dedicated Teaching Staff "
+        &quot; Our Dedicated Teaching Staff &quot;
       </h1>
       <p className="w-[88%] mx-auto mt-4 text-2xl">
         Our dedicated teachers go above and beyond to help students thrive. They
@@ -31,7 +31,7 @@ export default function page({}: Props) {
         journey. They offer guidance, encouragement, and constructive feedback,
         empowering students to develop critical thinking skills and become
         lifelong learners. They inspire curiosity, ignite a passion for
-        knowledge, and instill confidence in their students' abilities.
+        knowledge, and instill confidence in their students abilities.
       </p>
       <h1 className="text-center mt-8 xl:text-3xl font-extrabold">
         Courses Offered in RAH
@@ -72,7 +72,7 @@ export default function page({}: Props) {
       </div> 
       <div className={sans.className}>
         <h1 className="text-center my-10 xl:text-3xl font-extrabold">
-          "Voices of Success: Reflections from Our Accomplished Alumni"
+          &quot;Voices of Success: Reflections from Our Accomplished Alumni&quot;
         </h1>
         <div className="flex justify-between w-[94%] mt-4 mx-auto h-[400px]">
           <div className="w-[48%] h-full relative bg-sky-100">

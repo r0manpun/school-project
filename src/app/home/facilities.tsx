@@ -358,8 +358,8 @@ export default function Facilities() {
         <hr className="w-[220px] lg:w-[16%] border-[#ea9443] border-[1.5px] mx-auto mt-8" />
         {/* display news  */}
         <div className="grid lg:h-[550px] mt-10 lg:grid-cols-4 gap-6 w-[93%] 2xl:w-[90%] mx-auto">
-          {newsItem.map(({title,img,date},index)=>(<div className={`${index === 1 || index===3 ? 'self-end': '' }`}>
-            <img src={img} className="w-full h-[250px]" />
+          {newsItem.map(({title,img,date},index)=>(<div key={index} className={`${index === 1 || index===3 ? 'self-end': '' }`}>
+            <Image width={1440} height={1400} alt="news" src={img} className="w-full h-[250px]" />
             <p className="flex mt-8 justify-center">
               {title}
             </p>

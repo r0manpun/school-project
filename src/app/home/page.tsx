@@ -60,7 +60,7 @@ export default function Home() {
                 WELCOME
               </h1>
               <h1 className="text-xl lg:text-4xl text-[#FD7900] font-normal text-center md:mt-10">
-                WHAT MAKES US <br />
+                WHAT MAKES US <br/>
                 UNIQUE?
               </h1>
               <br />
