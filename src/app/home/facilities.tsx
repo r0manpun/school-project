@@ -46,23 +46,23 @@ const slides = [
 
 const newsItem =[{
   title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
-  date:"Jestha 12",
+  date:"14th-15th Jestha, 2080",
   img:"/assets/home/home1.jpg",
 },
 {
-  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
-  date:"Jestha 12",
-  img:"/assets/home/home1.jpg",
+  title:"Lower Secondary English Spelling Contest",
+  date:"5th Jestha, 2080",
+  img:"/assets/home/home2.jpg",
+},
+{
+  title:"Selection of all-School's Captains, Vice Captains, each house Captains, Vice-Captains, house teachers",
+  date:"1st Jestha, 2080",
+  img:"/assets/home/home3.jpg",
 },
 {
   title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
-  date:"Jestha 12",
-  img:"/assets/home/home1.jpg",
-},
-{
-  title:"Parents oreientation program from class Nursery to UKG by Kabita Aryal madam",
-  date:"Jestha 12",
-  img:"/assets/home/home1.jpg",
+  date:"29th Chaitra, 2079",
+  img:"/assets/home/home4.jpg",
 },]
 
 export default function Facilities() {
@@ -356,6 +356,7 @@ export default function Facilities() {
           Latest Events & News
         </h1>
         <hr className="w-[220px] lg:w-[16%] border-[#ea9443] border-[1.5px] mx-auto mt-8" />
+        {/* display news  */}
         <div className="grid lg:h-[550px] mt-10 lg:grid-cols-4 gap-6 w-[93%] 2xl:w-[90%] mx-auto">
           {newsItem.map(({title,img,date},index)=>(<div className={`${index === 1 || index===3 ? 'self-end': '' }`}>
             <img src={img} className="w-full h-[250px]" />

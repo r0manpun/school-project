@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import React from "react";
 
@@ -68,9 +69,9 @@ export default function page({}: Props) {
 
       {/* GALLERY */}
 
-      <div className="w-[90%] xl:w-[80%] mx-auto mt-3 xl:mt-20 flex flex-wrap xl:grid xl:grid-cols-3 gap-4 xl:gap-y-10 2xl:gap-y-16 place-content-center">
+      <div className="w-[90%] 2xl:w-[80%] mx-auto mt-3 xl:mt-20 flex flex-wrap xl:grid xl:grid-cols-3 gap-4 xl:gap-10 2xl:gap-y-16 place-content-center">
         {galleryData.map((item,index)=> (
-        <Link href={item.url}><div key={index} className="flex place-content-center items-center relative w-[160px] h-[120px] lg:w-[250px] lg:h-[200px] xl:w-[400px] xl:h-[350px] transition duration-300 hover:scale-105 bg-gray-500">
+        <Link href={item.url}><div key={index} className="flex place-content-center items-center relative w-36 h-24 sm:w-[160px] sm:h-[120px] md:w-[250px] md:h-[200px] xl:w-96 xl:h-80 2xl:w-[400px] 2xl:h-[350px] transition duration-300 hover:scale-105 bg-gray-500">
           <img
             src={item.img}
             className=" w-full h-full object-cover "

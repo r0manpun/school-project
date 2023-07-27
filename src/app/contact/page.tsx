@@ -45,7 +45,7 @@ export default function page({}: Props) {
         <input type="text" placeholder="Phone number" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
         <input type="text" placeholder="Subject" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
         <input type="text" placeholder="Message" className="w-[75%] h-8 lg:h-14 ml-12 xl:h-16 border-b-[1px] border-black" required/>
-        <button className="flex justify-center items-center border xl:border-2 border-black w-20 h-8 xl:w-32 xl:h-14 rounded-3xl text-[12px] lg:text-base font-semibold my-5 xl:mt-8 mx-auto">Submit<img src="/assets/icons/s.png" className="w-5 h-4"/></button>
+        <button className="flex justify-center items-center border xl:border-2 border-black w-20 h-8 xl:w-32 xl:h-14 rounded-3xl text-[12px] lg:text-base font-semibold my-5 xl:mt-8 mx-auto">Submit<img src="/assets/icons/s.png" className="w-5 h-4 xl:w-[34px] xl:h-[34px]"/></button>
        </form>
       </div>
       </div>
