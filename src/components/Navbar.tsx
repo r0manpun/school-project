@@ -62,7 +62,7 @@ export default function Navbar() {
             </button>
 
             <div
-              className={`fixed flex flex-col right-0 w-full h-screen top-10 opacity-100 bg-blue-500 transition-transform duration-500  ${
+              className={`absolute flex flex-col right-0 w-full h-screen top-10 opacity-100 bg-blue-500 transition-transform duration-500  ${
                 isMenuOpen
                   ? "transform translate-x-0 "
                   : "transform translate-x-full"
