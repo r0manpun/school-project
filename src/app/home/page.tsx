@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   const [page, setPage] = useState(1);
-  const noticesPerPage = 5;
+  const noticesPerPage = 6;
   const lastIndex = page * noticesPerPage;
   const firstIndex = lastIndex - noticesPerPage;
 
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="h-full sm:flex relative justify-around mt-4 p-6 xl:p-10 2xl:p-12">
           <div className="lg:flex sm:w-4/6 lg:w-4/5 2xl:w-10/12">
             <section className="flex flex-col items-center xl:w-3/5 2xl:w-2/4 p-2 xl:p-0">
-              <div className="border-[1px] w-px h-10 lg:h-16 bg-[#BAAEAE]"></div>
+              <div className="border-[1px] w-px h-10 xl:h-16 bg-[#BAAEAE]"></div>
               <h1 className="mt-3 2xl:mt-4 font-medium text-[#797979] text-base xl:text-xl  2xl:text-3xl">
                 WELCOME
               </h1>
@@ -70,7 +70,7 @@ export default function Home() {
                 UNIQUE?
               </h1>
               <br />
-              <p className="mx-auto text-sm lg:text-base 2xl:text-xl text-[#4B4747] text-center  sm:px-6 2xl:p-2">
+              <p className="mx-auto text-sm xl:text-base 2xl:text-xl text-[#4B4747] text-center sm:px-6 lg:p-0 2xl:p-2">
                 Rainbow Academic Homes is renowned for academic excellence. What
                 sets us apart is our unwavering dedication to provide a
                 distinctive and inclusive educational experience. Our passionate
@@ -84,7 +84,7 @@ export default function Home() {
               </p>
             </section>
             <Image
-              className=" object-cover my-auto w-[90%] sm:h-[300px] lg:w-2/5 lg:h-3/4 2xl:w-1/2 mx-auto p-3 2xl:p-4 "
+              className=" object-cover my-auto w-[90%] sm:h-[300px] lg:w-1/2 lg:h-3/4 2xl:w-1/2 mx-auto p-3 2xl:p-4 "
               src="/assets/welcome.jpg"
               width={1200}
               height={1100}
@@ -114,18 +114,18 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="flex  absolute bottom-7 w-full justify-center">
-              <button onClick={prevPage} disabled={page === 1}>
+            <div className="flex absolute bottom-7 w-full justify-center">
+              <button className="border" onClick={prevPage} disabled={page === 1}>
                 ⬅️
               </button>
               {numbers.map((n) => (
-                <div key={n} className={`${page === n ? "active " : ""}`}>
-                  <a href="#" onClick={() => ChangePage(n)}>
+                <div key={n} className={`${page === n ? "active " : ""} border w-6`}>
+                  <a href="#" onClick={() => ChangePage(n)} className="flex justify-center">
                     {n}
                   </a>
                 </div>
               ))}
-              <button onClick={nextPage} disabled={page === npage}>
+              <button className="border" onClick={nextPage} disabled={page === npage}>
                 ➡️
               </button>
             </div>

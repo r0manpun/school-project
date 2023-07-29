@@ -38,8 +38,8 @@ export default function Slider({ slides }: Props) {
       </button>
       {slides.map((item, index) => (
         <Image
-        width={1200}
-        height={1000}
+        width={1400}
+        height={1200}
           src={item.url}
           key={index}
           alt={`slider${index}`}
