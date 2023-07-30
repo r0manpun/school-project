@@ -103,8 +103,8 @@ export default function Facilities() {
             The Facilities we provide
           </div>
           <hr className="mt-6 border-orange-300 mx-auto w-36 lg:w-[208px]" />
-          <div className="sm:flex w-full mt-4">
-            <div className="self-center mx-auto p-3 h-72 lg:ml-14 mt-[5%] lg:mt-0 sm:h-80 sm:w-2/4 lg:h-96 xl:h-[520px] 2xl:w-[1485px] 2xl:h-[530px]">
+          <div className="sm:flex w-full mt-1 md:mt-4">
+            <div className="mx-auto p-3 w-80 h-60 lg:pl-10 mt-[5%] sm:h-80 sm:w-2/4 lg:h-96 xl:h-[520px] 2xl:w-[1485px] 2xl:h-[530px]">
               <Slider slides={slides} />
             </div>
             <div className="p-4 md:p-8 xl:h-[424px] sm:w-[50%] 2xl:w-[1070px]">
@@ -118,7 +118,7 @@ export default function Facilities() {
                   necessary amenities to support your growth and success.
                 </span>
               </p>
-              <div className=" grid grid-cols-4 text-center text-[#FD7900] mt-4 gap-4 lg:mt-8 lg:-ml-12 2xl:mt-18 xl:-ml-4">
+              <div className=" grid grid-cols-4 text-center text-[#FD7900] mt-4 gap-4 xl:mt-8 2xl:mt-18 xl:-ml-4">
                 <div className="flex flex-col self-start items-center">
                   <MdOutlineScience className="w-12 h-12 md:w-20 md:h-20 2xl:w-24 2xl:h-24" />
                   <label className="text-black text-[12px] xl:text-base 2xl:text-xl font-bold">

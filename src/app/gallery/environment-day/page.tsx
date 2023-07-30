@@ -12,7 +12,7 @@ export default function page({}: Props) {
         Environment Day
       </div>
       <hr className="w-[220px] lg:w-[13%] border-black mx-auto mt-2" />
-      <div className="flex p-2 sm:p-4 lg:w-[90%] mt-6 gap-2 lg:gap-5 xl:gap-8 place-content-center mx-auto">
+      <div className="flex p-2 sm:p-4 lg:w-[90%] mt-6 gap-2 lg:gap-5 xl:gap-8  place-content-center mx-auto">
         {/* 1st flex column */}
         <div className="flex flex-col gap-2 xl:gap-6 ">
           <div className="h-28 w-28 sm:w-44 sm:h-48 lg:w-72 lg:h-72 2xl:w-[423px] 2xl:h-[434px] group">

@@ -24,7 +24,7 @@ export default function Footer() {
           className="absolute w-full h-full object-cover bg-white opacity-30"
           alt="footer"
         />
-        <div className="absolute top-0 lg:top-[13%] lg:left-[12%] w-full  xl:w-[30%] mx-auto">
+        <div className="absolute top-0 lg:top-[13%] lg:left-[12%]  xl:w-[30%] mx-auto">
           <div className="flex gap-3 ml-16 mb-2 pl-3">
             <Image
               className=" w-20 ml-5 mt-4 "

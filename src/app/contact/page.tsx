@@ -8,9 +8,10 @@ type Props = {};
 export default function page({}: Props) {
   return (
     <>
+     <Image  height={1400} width={1400} className="absolute w-full h-full object-cover" src="/assets/background/b1.png" alt="background"/>
     <div className="w-full h-full ">
       <div className="flex flex-col w-full h-ful">
-          <Image  height={1400} width={1400} className="absolute w-full h-full object-cover" src="/assets/background/b1.png" alt="background"/>
+         
         <div className="relative text-sm md:text-xl xl:text-2xl font-semibold ml-3 xl:ml-20 mt-8 gap-y-3">
           <div className="flex items-center gap-2">
             <SlLocationPin className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />

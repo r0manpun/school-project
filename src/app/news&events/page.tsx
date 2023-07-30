@@ -33,7 +33,7 @@ export default function News({}: Props) {
       <div className="grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 ">
         {data.map(({ img, title, desc }, index) => (
           <div
-            className="border relative h-56 sm:h-80 sm:w-80 md:w-[340px] md:h-96 lg:h-[480px] lg:w-11/12 xl:h-[555px]  bg-white drop-shadow-lg mx-auto"
+            className="border relative h-56 sm:h-80 sm:w-80 md:w-[330px] md:h-96 lg:h-[495px] lg:w-[495px] xl:w-11/12 xl:h-[555px]  bg-white drop-shadow-lg mx-auto"
             key={index}
           >
             <div className=" w-full h-2/3 lg:h-[75%] xl:h-2/3">
@@ -50,10 +50,10 @@ export default function News({}: Props) {
                 &quot;{title}&quot;
               </h1>
               <p className="text-[10px] md:text-base xl:text-lg xl:mt-3 line-clamp-2">{desc}</p>
-              <div className="flex w-full justify-center md:mt-2 ">
+              <div className="flex w-full justify-center sm:mt-2 ">
                 <Link
                   href="/news&events/id"
-                  className="flex justify-center items-center absolute hover:border hover:rounded-[30px] text-[9px] md:text-base md:w-28 md:h-10 xl:w-32 h-6 xl:h-14 2xl:mx-auto hover:bg-[#19E3E3] hover:text-white"
+                  className="flex justify-center items-center absolute hover:border hover:rounded-[30px] text-[9px] sm:text-sm md:text-base sm:w-24 md:w-28 sm:h-11 xl:w-32 h-6 xl:h-14 2xl:mx-auto hover:bg-[#19E3E3] hover:text-white"
                 >
                   Read More
                 </Link>
