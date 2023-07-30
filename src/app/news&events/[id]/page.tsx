@@ -29,7 +29,7 @@ export default function page({}: Props) {
           with their wisdom and experiences.
         </p>
       </div>
-      <div className="flex flex-wrap gap-4 xl:gap-x-6 xl:gap-y-10 place-content-center sm:w-10/12 mx-auto mt-8">
+      <div className="flex flex-wrap gap-4 xl:gap-x-6 xl:gap-y-10 place-content-center sm:w-10/12 max-w-screen-2xl mx-auto mt-8">
         {data.img.map((url) =>(<Image width={1500} height={1000} src={url} alt="events" key={url} className="object-cover w-36 h-32 md:w-52 md:h-44 lg:w-72 lg:h-72 2xl:w-96 "/>) )}
         </div>
         <div className="flex justify-center items-center gap-2 xl:gap-3 text-[10px] xl:text-2xl mt-5 xl:mt-10">

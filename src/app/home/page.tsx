@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Facilities from "./facilities";
 
 import Image from "next/image";
@@ -25,7 +25,22 @@ export default function Home() {
   ];
 
   const [page, setPage] = useState(1);
-  const noticesPerPage = 6;
+  const [noticesPerPage, setNoticesPerPage] = useState(5);
+
+  useEffect(() => {
+    function handleResize() {
+      const screenSize = window.innerWidth;
+      setNoticesPerPage(screenSize > 1530 ? 6 : 5);
+    }
+
+    handleResize(); // Initial call to set the initial value
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const lastIndex = page * noticesPerPage;
   const firstIndex = lastIndex - noticesPerPage;
 
