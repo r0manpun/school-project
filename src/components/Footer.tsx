@@ -15,8 +15,8 @@ const sans = Open_Sans({
 export default function Footer() {
   const isSmallScreen = useMediaQuery("(max-width:420px)");
   return (
-    <footer className="mt-6 xl:mt-24">
-      <div className="relative w-full h-[190px] xl:mt-14 lg:h-[380px]">
+    <footer className="">
+      <div className="relative w-full h-[190px] lg:h-[380px]">
         <Image
           width={1400}
           height={800}
@@ -25,7 +25,7 @@ export default function Footer() {
           alt="footer"
         />
         <div className="absolute top-0 lg:top-[13%] lg:left-[12%]  xl:w-[30%] mx-auto">
-          <div className="flex gap-3 ml-16 mb-2 pl-3">
+          <div className="flex gap-3 xl:ml-16 mb-2 pl-3">
             <Image
               className=" w-20 ml-5 mt-4 "
               src="/logo2.png"
@@ -43,24 +43,24 @@ export default function Footer() {
             </div>
           </div>
           <hr className="w-[220px] lg:w-[70%] border-[#ea9443] border-[1.5px] ml-20" />
-          <div className="flex flex-row flex-wrap xl:grid gap-2 xl:justify-center text-[10px] lg:text-base text-center mt-3 xl:mt-5 xl:-ml-12">
+          <div className="flex flex-row flex-wrap lg:flex-col xl:grid gap-2 lg:justify-center text-[10px] lg:text-base text-center mt-3 xl:mt-5 lg:ml-12">
             <div className="flex items-center gap-1 font-semibold ">
               <SlLocationPin className="w-3 xl:w-5 xl:h-5" />
-              KOLPATAN-15,POKHARA,NEPAL<p className="xl:hidden">|</p>
+              KOLPATAN-15,POKHARA,NEPAL<p className="lg:hidden">|</p>
             </div>
-            <div className="flex justify-center items-center gap-1 font-semibold ">
+            <div className="flex items-center gap-1 font-semibold ">
               <FiPhone className="w-3 xl:w-5 xl:h-5" /> TEL: +977-061-430577,
-              061-430191<p className="xl:hidden">|</p>
+              061-430191<p className="lg:hidden">|</p>
             </div>
             <div className="flex items-center gap-1 font-semibold ">
               <FiMail className="w-3 xl:w-5 xl:h-5" />
-              rainbowacademic52@gmail.com<p className="xl:hidden">|</p>
+              rainbowacademic52@gmail.com<p className="lg:hidden">|</p>
             </div>
           </div>
         </div>
         {!isSmallScreen && (
           <>
-            <div className="flex absolute text-center top-[30%] right-[20%] justify-between ml-40 gap-10 p-10">
+            <div className="hidden lg:flex absolute text-center top-[30%] right-[20%] justify-between ml-40 gap-10 p-10">
               <ul>
                 <li className="text-lg font-semibold">ABOUT US</li>
                 <li className="text-sm">Code of Conduct</li>
@@ -77,10 +77,10 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <hr className="absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%]" />
+            <hr className="hidden lg:block absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%]" />
           </>
         )}
-        <div className="flex absolute justify-around w-[100px]  xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
+        <div className="hidden lg:flex absolute justify-around w-[100px]  xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
           <RiFacebookCircleLine className="w-7 h-7" />
           <FiYoutube className="w-7 h-7" />
         </div>

@@ -15,6 +15,7 @@ const headerItem=[{
 export default function Header(){
   const isSmallScreen = useMediaQuery('(max-width: 1310px)')
   return (
+    // bg-gradient-to-b from-violet-700 via-indigo-400 to-sky-300
     <header
       className="flex md:flex-row w-full h-24 md:h-28 [background-image:linear-gradient(180deg,_rgba(20,_151,_207,_0.4),_rgba(66,_19,_165,_0.7)_0%,_rgba(13,_176,_227,_0.77)_83%)] gap-4
       "

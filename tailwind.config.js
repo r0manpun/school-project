@@ -11,6 +11,7 @@ module.exports = {
         'footer-image':"url('/assets/home/footer.png')",
         'footer':"url('/assets/home/footer1.jpg')",
         "back-prime":"url('/assets/background/b1')",
+        "bg":"url('/assets/background/b1')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
