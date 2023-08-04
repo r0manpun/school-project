@@ -10,7 +10,7 @@ export default function page({}: Props) {
     <div className="bg-gradient-to-r from-teal-100 to-rose-200">
     <div className="w-full h-full max-w-[1540px] mx-auto ">
       <div className="flex flex-col w-full h-full">
-        <div className="relative text-sm md:text-xl xl:text-2xl font-semibold ml-3 md:ml-20 2xl:pl-16 mt-8 gap-y-3">
+        <div className=" text-sm md:text-xl xl:text-2xl font-semibold ml-3 md:ml-20 2xl:pl-16 mt-8 gap-y-3">
           <div className="flex items-center gap-2">
             <SlLocationPin className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
             <label>Kolpatan-15, Pokhara,Kaski,Nepal</label>
@@ -33,9 +33,9 @@ export default function page({}: Props) {
         // allowfullscreen=""
         loading="lazy"
         // referrerpolicy="no-referrer-when-downgrade"
-        className="relative my-8 2xl:ml-12 xl:ml-6 mx-auto w-80 h-80 sm:w-[47vw] sm:h-[] md:h-[370px] lg:w-[48vw] lg:h-[460px] 2xl:w-[740px]  xl:h-[558px] lg:p-4"
+        className=" my-8 2xl:ml-12 xl:ml-6 mx-auto w-80 h-80 sm:w-[47vw] sm:h-[] md:h-[370px] lg:w-[48vw] lg:h-[460px] 2xl:w-[740px]  xl:h-[558px] lg:p-4"
          ></iframe>
-       <form className="relative top-6  w-80 h-72 sm:h-80 2xl:w-[590px] md:w-[44vw] md:h-[362px] lg:h-[425px] xl:h-[540px]  2xl:h-[560px] opacity-70 bg-white rounded-2xl xl:rounded-xl mx-auto pt-4">
+       <form className=" w-80 h-72 sm:h-80 2xl:w-[590px] md:w-[44vw] md:h-[362px] lg:h-[425px] xl:h-[540px]  2xl:h-[560px] opacity-70 bg-white rounded-2xl xl:rounded-xl mx-auto pt-4">
         <h1 className="lg:text-2xl xl:text-3xl text-center mt-2 xl:mt-6 font-medium">Reach Out to Us</h1>
         <hr className="w-[30%] border-[#CAC6C6] mx-auto mt-2" />
         <input type="text" placeholder="Full Name" className="w-[75%] h-8 md:h-11 lg:h-12 ml-12 mt-2 xl:mt-8 xl:h-16 border-b-[1px] border-black" required/>
