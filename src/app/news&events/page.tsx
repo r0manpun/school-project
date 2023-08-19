@@ -7,13 +7,13 @@ type Props = {};
 
 export default function News({}: Props) {
   return (
-    <div className="max-w-[1543px] mx-auto">
-      <div className="flex justify-center items-center gap-3 text-base xl:text-3xl ">
+    <div className="max-w-[1543px] mx-auto ">
+      <div className="flex justify-center items-center gap-3 text-base xl:text-3xl pt-10 ">
         <hr className=" border-black w-8 xl:w-20" />
         News And Events
         <hr className="border-black w-8 xl:w-20" />
       </div>
-      <div className="grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-4 ">
+      <div className="relative -z-10 grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-4 ">
         {data.map(({ img, title, desc }, index) => (
           <div
             className=" h-56 sm:h-80 sm:w-80 md:w-[330px] md:h-96 lg:h-[495px] lg:w-[495px] xl:w-11/12 xl:h-[555px]  bg-white drop-shadow-lg mx-auto"

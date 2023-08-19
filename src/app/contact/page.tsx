@@ -7,7 +7,7 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <div className="bg-gradient-to-r from-teal-100 to-rose-200">
+    <div className="bg-gradient-to-r from-teal-100 to-rose-200 relative -z-10">
     <div className="w-full h-full max-w-[1540px] mx-auto ">
       <div className="flex flex-col w-full h-full">
         <div className=" text-sm md:text-xl xl:text-2xl font-semibold ml-3 md:ml-20 2xl:pl-16 mt-8 gap-y-3">

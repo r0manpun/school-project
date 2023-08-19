@@ -76,8 +76,8 @@ export default function Navbar() {
         <div
           className={
             isMenuOpen
-              ? "absolute flex md:hidden top-10 left-0 right-0 bottom-0 justify-center items-start w-full bg-sky-500 h-screen ease-in duration-500"
-              : "absolute flex md:hidden top-10 left-[-100%] right-0 bottom-0 justify-center items-start w-full bg-black h-screen ease-in duration-500 "
+              ? "absolute flex md:hidden top-10 left-0 right-0 bottom-0 justify-center items-start w-full bg-sky-500 h-screen ease-in duration-500 z-10 "
+              : "absolute flex md:hidden top-10 left-[-100%] right-0 bottom-0 justify-center items-start w-full bg-black h-screen ease-in duration-500 z-10"
           }
         >
           <ul>
@@ -86,7 +86,7 @@ export default function Navbar() {
                 key={index}
                 className="p-4 text-4xl uppercase text-white hover:text-[#1091C8]"
               >
-                <Link href={`/${slug}`} className="">
+                <Link href={`/${slug}`} onClick={() => setIsMenuOpen(false)} className="">
                   {title}
                 </Link>
               </li>
