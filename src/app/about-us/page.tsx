@@ -67,11 +67,11 @@ export default function page({}: Props) {
             width={2048}
             height={1365}
             src="/assets/about/about3.jpg"
-            className="w-[55vw] h-[20vh] sm:h-[23vh] md:h-[34vh] lg:h-[40vh] 2xl:h-[539px] 2xl:w-[65%]"
+            className="w-[55vw] h-[30vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh]  2xl:h-[600px] 2xl:w-[65%]"
             alt="teachers"
           />
-          <section className="flex flex-col w-[45%] h-72 sm:h-80 md:h-[476px] lg:h-[535px] xl:h-[580px] 2xl:h-[620px] border-2 border-black rounded-2xl ">
-            <div className="text-[1.5vw] 2xl:text-[22px] h-[19.2vh] sm:h-[22vh] md:h-[33vh] lg:h-[38vh] xl:h-[40vh] 2xl:h-[540px] p-2 sm:p-4 overflow-hidden ">
+          <section className="flex flex-col w-[45%] h-60 sm:h-80 md:h-[380px] lg:h-[480px] xl:h-[580px] 2xl:h-[620px] border-2 border-black rounded-2xl ">
+            <div className="text-[1.5vw] 2xl:text-[22px] h-[30vh] sm:h-[45vh] md:h-[60vh] lg:h-[79vh] xl:h-[75vh] 2xl:h-[540px] p-2 sm:p-4 overflow-hidden ">
               <article className="">
                 Located in Kolpatan-15, Pokhara, Nepal, Rainbow Academic Homes
                 has been a reputable educational institution since its
@@ -95,7 +95,7 @@ export default function page({}: Props) {
             </button>
           </section>
         </div>
-        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto mt-44 xl:mt-60 relative">
+        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto mt-24 md:mt-44 xl:mt-60 relative">
           <Image
             width={1000}
             height={600}
@@ -103,7 +103,7 @@ export default function page({}: Props) {
             className="absolute rounded-2xl -top-10 right-2 w-[35%] 2xl:h-[421px]"
             alt=""
           />
-          <div className="w-[65%] h-[15vh] sm:h-[20vh] md:h-[25vh] lg:h-[28vh] xl:h-[462px] bottom-2 bg-[#FD7900F0] ml-9 md:ml-12">
+          <div className="w-[65%] h-[27vh] sm:h-[37vh] md:h-[43vh] lg:h-[55vh] xl:h-[462px] bottom-2 bg-[#FD7900F0] ml-9 md:ml-12">
             <div className="w-[46vw] h-[90%] text-white p-6 overflow-hidden">
               <h1 className="text-[1.8vw] xl:text-2xl font-bold lg:ml-4 ">
                 Message from The Founder, Chairman
@@ -127,15 +127,15 @@ export default function page({}: Props) {
             </div>
           </div>
         </div>
-        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto xl:mt-8 relative">
+        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto -mt-20 xl:mt-8 relative">
           <Image
             width={1000}
             height={600}
             src="/assets/about/about5.jpg"
-            className="absolute rounded-2xl bottom-12 sm:bottom-20  md:bottom-5 left-12 object-cover w-[35%] h-40 sm:h-56 md:h-60 lg:h-72 xl:h-96 2xl:h-[421px]"
+            className="absolute rounded-2xl  bottom-20  md:bottom-5 left-12 object-cover w-[35%] h-40 sm:h-56 md:h-60 lg:h-72 xl:h-96 2xl:h-[421px]"
             alt=""
           />
-          <div className="w-[65%] bg-[#FD7900F0] h-[15vh] sm:h-[20vh] md:h-[25vh] lg:h-[28vh] xl:h-[462px] bottom-2 ml-auto ">
+          <div className="w-[65%] bg-[#FD7900F0]  h-[27vh] sm:h-[37vh] md:h-[43vh] lg:h-[55vh] xl:h-[462px] bottom-2 ml-auto ">
             <div className="w-[46vw] h-[90%] text-white p-6 overflow-hidden ml-10">
               <h1 className="text-[1.8vw] xl:text-2xl font-bold lg:ml-4 ">
                 Message from The Founder, Principal
@@ -160,7 +160,7 @@ export default function page({}: Props) {
           </div>
         </div>
         {/* Meet Our Team */}
-        <h1 className="text-[3vw] xl:text-3xl font-bold text-center mt-24 ">
+        <h1 className="text-[3vw] xl:text-3xl font-bold text-center md:mt-24 ">
           Meet Our Team
         </h1>
         <div className="flex flex-wrap max-w-[817px] mt-10 gap-6 gap-y-10 mx-auto pb-24 justify-center">
@@ -169,42 +169,42 @@ export default function page({}: Props) {
             height={1365}
             src="/assets/about/about4.jpg"
             alt=""
-            className="w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56 object-cover"
+            className="w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56 object-cover"
           />
           <Image
             width={1430}
             height={1365}
             src="/assets/about/about5.jpg"
             alt=""
-            className=" w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56  object-cover"
+            className=" w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56  object-cover"
           />
           <Image
             width={1430}
             height={1365}
             src="/assets/about/about8.png"
             alt=""
-            className="w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56  object-cover "
+            className="w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56  object-cover "
           />
           <Image
             width={1430}
             height={1365}
             src="/assets/about/about6.jpg"
             alt=""
-            className="w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56  object-cover "
+            className="w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56  object-cover "
           />
           <Image
             width={1430}
             height={1365}
             src="/assets/about/about7.png"
             alt=""
-            className="w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56  object-cover "
+            className="w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56  object-cover "
           />
           <Image
             width={1430}
             height={1365}
             src="/assets/about/about5.jpg"
             alt=""
-            className="w-[22vw] sm:w-[25vw] h-[8vh] sm:h-[12vh] md:h-[15vh] lg:w-64 lg:h-56  object-cover "
+            className="w-[22vw] sm:w-[25vw] h-[18vh] sm:h-[25vh] md:h-[30vh] lg:w-64 lg:h-56  object-cover "
           />
         </div>
       </div>

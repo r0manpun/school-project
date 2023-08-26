@@ -2,21 +2,23 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  isMenuOpen: boolean
+};
 
-
-export default function News({}: Props) {
+export default function News({isMenuOpen}: Props) {
   return (
-    <div className="max-w-[1543px] mx-auto ">
+    
+    <div className={`max-w-[1543px] mx-auto bg-slate-200`}>
       <div className="flex justify-center items-center gap-3 text-base xl:text-3xl pt-10 ">
         <hr className=" border-black w-8 xl:w-20" />
         News And Events
         <hr className="border-black w-8 xl:w-20" />
       </div>
-      <div className="relative -z-10 grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-4 ">
+      <div className=" grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-4 ">
         {data.map(({ img, title, desc }, index) => (
           <div
-            className=" h-56 sm:h-80 sm:w-80 md:w-[330px] md:h-96 lg:h-[495px] lg:w-[495px] xl:w-11/12 xl:h-[555px]  bg-white drop-shadow-lg mx-auto"
+            className=" h-56 sm:h-80 sm:w-80 md:w-[330px] md:h-96 lg:h-[495px] lg:w-[495px] xl:w-11/12 xl:h-[555px] lg:drop-shadow-lg bg-white mx-auto"
             key={index}
           >
             <div className=" w-full h-2/3 lg:h-[75%] xl:h-2/3">
@@ -32,14 +34,13 @@ export default function News({}: Props) {
               <h1 className="text-center lg:text-base text-[12px] xl:text-[22px] line-clamp-1">
                 &quot;{title}&quot;
               </h1>
-              <p className="text-[10px] md:text-base xl:text-lg xl:mt-3 line-clamp-2">{desc}</p>
+              <p className="text-[10px] md:text-base xl:text-lg xl:mt-3 line-clamp-2">
+                {desc}
+              </p>
               <div className="flex w-full justify-center sm:mt-2 ">
-                <Link
-                  href="/news&events/id"
-                  className="flex justify-center items-center hover:border hover:rounded-[30px] text-[9px] sm:text-sm md:text-base sm:w-24 md:w-28 sm:h-11 xl:w-32 h-6 xl:h-14 2xl:mx-auto hover:bg-[#19E3E3] hover:text-white"
-                >
-                  Read More
-                </Link>
+                <div className="flex justify-center items-center hover:border hover:rounded-[30px] text-[9px] sm:text-sm md:text-base sm:w-24 md:w-28 sm:h-11 xl:w-32 h-6 xl:h-14 2xl:mx-auto hover:bg-[#19E3E3] hover:text-white">
+                  <Link href="/news&events/id">Read More</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -51,8 +52,8 @@ export default function News({}: Props) {
 
 const data = [
   {
-    title: "Victory in Nepali Poem Program",
-    desc: "We are thrilled to announce that Ms. Januka Shress, a talented Grade 10 student, emerged as the winner in the renowned Nepali Poem Recitation Program organized by the Nepali Bhasa Parishad Kaski. Her exceptional skills and captivating recitation of Nepali poems brought great honor to our school. We are immensely proud of Januka's accomplishment and would like to extend our heartfelt congratulations to her for this outstanding achievement.",
+    title: "All-School Leaders and House Representatives",
+    desc: "We extend our warmest congratulations to all the dedicated individuals who have been appointed.....",
     img: "/assets/home/home3.jpg",
   },
   {
@@ -61,8 +62,18 @@ const data = [
     img: "/assets/home/home2.jpg",
   },
   {
-    title: "MoU Signed",
-    desc: "Nanjing University of Aeronautics and Astronautics (NUAA) and Rainbow Academic Homes .....",
+    title: "Nursery to UKG Parents Orentation Programme",
+    desc: "Experience the highlights of our highly successful Parents Orientation Program.....",
+    img: "/assets/home/home1.jpg",
+  },
+  {
+    title: "27th Asian Cities Taekwondo Championship",
+    desc: "We are proud to announce that Arik Rana, a talented Grade 4 student, achieved the remarkable feat of.....",
+    img: "/assets/btc6.jpg",
+  },
+  {
+    title: "1st Runner-up in Girls Volleyball Tournament",
+    desc: "We are thrilled to announce our talented girls' volleyball team for their outstanding achievement.....",
     img: "/assets/home/home1.jpg",
   },
 ];

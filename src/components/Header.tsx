@@ -7,10 +7,6 @@ import { SlLocationPin } from "react-icons/sl";
 import Image from "next/image";
 import { useMediaQuery } from "@mui/material";
 
-const headerItem=[{
-  title:"",
-  icon:"",
-}]
 
 export default function Header(){
   const isSmallScreen = useMediaQuery('(max-width: 1310px)')

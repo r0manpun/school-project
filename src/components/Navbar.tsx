@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import { Playfair_Display } from "next/font/google";
 //import { useMediaQuery } from "react-responsive";
-import { MdHome, MdOutlineMenu } from "react-icons/md";
-import { useMediaQuery } from "@mui/material";
+import { MdOutlineMenu } from "react-icons/md";
 import Link from "next/link";
 
 const playfair = Playfair_Display({
@@ -76,7 +75,7 @@ export default function Navbar() {
         <div
           className={
             isMenuOpen
-              ? "absolute flex md:hidden top-10 left-0 right-0 bottom-0 justify-center items-start w-full bg-sky-500 h-screen ease-in duration-500 z-10 "
+              ? "fixed flex md:hidden top-10 left-0 right-0 bottom-0 justify-center items-start w-full bg-blue-700 h-screen ease-in duration-500 z-10"
               : "absolute flex md:hidden top-10 left-[-100%] right-0 bottom-0 justify-center items-start w-full bg-black h-screen ease-in duration-500 z-10"
           }
         >

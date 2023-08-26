@@ -80,7 +80,7 @@ export default function Footer() {
             <hr className="hidden lg:block absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%]" />
           </>
         )}
-        <div className="hidden lg:flex absolute justify-around w-[100px]  xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
+        <div className="hidden xl:flex absolute justify-around w-[100px]  xl:bottom-[40px] xl:right-[21%] lg:w-[296px] ">
           <RiFacebookCircleLine className="w-7 h-7" />
           <FiYoutube className="w-7 h-7" />
         </div>
