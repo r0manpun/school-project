@@ -18,10 +18,10 @@ import Dialog from "@/components/Dialog";
 import Number from "@/components/AnimatedNumber"
 
 
-const noto = Noto_Serif_SC({
-  subsets: ["latin"],
-  weight: ["900"],
-});
+// const noto = Noto_Serif_SC({
+//   subsets: ["latin"],
+//   weight: ["900"],
+// });
 
 const sans = Open_Sans({
   subsets: ["latin"],
@@ -283,7 +283,7 @@ export default function Home() {
           About Us
         </h1>
         <hr className="w-[12%] 2xl:w-[220px] lg:w-36 border-[#ea9443] mx-auto mt-[3%] lg:mt-8" />
-        <div className={noto.className}>
+        {/* <div className={noto.className}> */}
           <div className="relative  w-full h-[110px] md:h-44 xl:h-52">
             <Image
               width={2000}
@@ -453,7 +453,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </div>
+      {/* </div> */}
       <div className="w-full my-6 md:mt-14 text-sm xl:text-3xl text-center text-[#FD7900]">
         <Link href="/news&events" className="border-2 border-black p-3">News & Events</Link>
       </div>

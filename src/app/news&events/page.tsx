@@ -3,10 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  isMenuOpen: boolean
 };
 
-export default function News({isMenuOpen}: Props) {
+export default function News({}: Props) {
   return (
     
     <div className={`max-w-[1543px] mx-auto bg-slate-200`}>
