@@ -34,6 +34,18 @@ const playfair = Playfair_Display({
   style: ["normal"],
 });
 
+export const getStaticProps= async () =>{
+  const res = await fetch("http://localhost:3000/api/notice", {
+    cache: "no-store",
+  });
+  const data = await res.json();
+   
+  return {
+    props:{
+      data,
+    }
+  }
+}
 
 
 export default function Home() {

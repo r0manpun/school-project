@@ -12,13 +12,6 @@ export default function page({}: Props) {
   return (
     <>
       <div className=" max-w-[1540px] mx-auto h-full">
-        {/* <Image
-        width={1400}
-        height={2100}
-        src="/assets/background/b2.png"
-        className="object-cover min-h-full w-full"
-        alt="academics1"
-      /> */}
         <Image
           width={1400}
           height={1300}
@@ -117,7 +110,7 @@ export default function page({}: Props) {
             &quot;Voices of Success: Reflections from Our Accomplished
             Alumni&quot;
           </h1>
-          <div className="flex justify-between px-4 mt-4 mx-auto lg:h-72">
+          <div className="flex justify-between px-4 mt-4 mx-auto lg:h-72 pb-8">
             <div className="flex w-[44vw] h-[15vh] sm:w-[47vw] sm:h-[20vh] md:h-[26vh] lg:h-auto 2xl:w-[680px] justify-around items-center bg-sky-100">
               <div className="flex flex-col items-center">
               <Image width={514} height={514} src="/assets/academics/icon.png" className=" w-[10vw] md:w-[12vw] lg:w-[14vw] xl:w-48 xl:h-48" alt="teacher"/>

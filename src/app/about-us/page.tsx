@@ -11,7 +11,7 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <div className=" bg-gradient-to-r from-gray-100 to-violet-100">
+    <div className="bg-gradient-to-r from-gray-100 to-violet-100">
     <div className="max-w-[1530px] mx-auto">
       <div className={playfair.className}>
         <h1 className="text-[2.5vw] lg:text-2xl xl:text-4xl text-center pt-8 font-semibold">
@@ -127,7 +127,7 @@ export default function page({}: Props) {
             </div>
           </div>
         </div>
-        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto -mt-20 xl:mt-8 relative">
+        <div className="w-[90%] md:w-[80%] h-72 sm:h-[360px] lg:h-[400px] xl:h-[521px] mx-auto -mt-20 lg:mt-8 relative">
           <Image
             width={1000}
             height={600}
